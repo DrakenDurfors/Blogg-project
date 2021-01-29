@@ -1,0 +1,240 @@
+*
+    box-sizing: border-box
+
+// Makes the page take upp 100% of the suser viewscreen (usefull for aligning things verticly without use of margins)
+body
+    min-height: 100vh
+    
+html
+    min-height: 100vh
+
+// Changes the styling of links to a less ugly one:
+a 
+    text-decoration: none
+    color: black
+    &:hover
+        cursor: pointer
+
+
+hr
+    margin: 0 
+// Changes all submit buttons to have a pointed cursor
+input[type=submit]
+    cursor: pointer
+// Styles the navbar
+.Bnavbar
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .Bnavlist
+        display: flex
+        align-items: center
+        .BnavListItem
+            list-style-type: none
+            margin: 0.2rem
+            padding: 0
+            display: inline
+            a
+                border: 1px solid gray
+                padding: 0.5rem 1rem 0.5rem 1rem
+                background-color: lightgray
+    button 
+        background-color: white
+        border: none
+
+.loginReg
+    display: flex
+    align-items: center
+    justify-content: right
+
+.BloginBtn
+    border: 1px solid gray
+    padding: 0.5rem 1rem 0.5rem 1rem
+    background-color: lightgray
+
+.BloginInputField
+    padding: 0.5rem 1rem 0.5rem 1rem
+
+.regButt
+    border: 1px solid gray
+    padding: 0.5rem 1rem 0.5rem 1rem
+    background-color: lightgray
+    font-size: 14px
+// ------------------
+
+.main
+    margin: 0
+    width: 100%
+    display: grid
+    grid-template-columns: 20fr 60fr 20fr
+
+    // The left and right "empty spaces" in the page
+.margin
+    flex-shrink: 3
+
+    // The container containing the front page
+.BigPostConteiner
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    flex-grow: 5
+
+// Category styling
+.categories
+    display: flex
+    align-items: center
+    justify-content: space-around
+    background-color: rgb(240, 239, 239)
+    padding-bottom: 1.5rem
+    input[type=radio]:hover
+        cursor: pointer
+    label:hover
+        cursor: pointer
+
+
+.searchGroup
+    display: flex
+    justify-content: center
+
+.searchbar
+    padding: 6px 10px
+
+// The div that displays the articles
+.articleDisplayDiv
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+
+    // The sizing of the article-cards
+.articleCard
+    width: 18rem 
+    margin: 1rem
+
+.articleBtn
+    padding: 0.5rem
+    background-color: blue
+    color: white
+    border-radius: 0.5rem
+    border: 1px solid black
+
+// ------------------------------------------------
+// The button group for editing and deleting an article
+.buttonGroup
+    display: flex
+    flex-wrap: wrap
+    .articleChangeBtn
+        width: 3rem
+
+    // Common class for the buttons used to change things in the article.
+.articleChangeBtn
+    padding: 0.5rem
+    border-radius: 0.5rem
+    border: 1px solid black
+    margin: 0.5rem
+    margin-left: 0
+    color: white
+    font-size: 18px
+
+// The button for editing the post
+.edit
+    background-color: blue
+// The button for deleting a post
+.delete
+    background-color: red    
+
+// -------------------------------------------------------
+    // The container that encompases the make article form
+.makeArticle
+    display: flex
+    justify-content: center
+    align-items: center
+
+    // Knappen för att skapa en post
+.create
+    padding: 0.5rem
+    border-radius: 0.5rem
+    border: 1px solid black
+    margin: 0.5rem
+    color: white
+    font-size: 18px
+    background-color: blue
+
+    // The delete container - used to align the content to the middle
+.deleteContainer
+    display: flex
+    justify-content: center
+    align-content: center
+    margin-top: 5rem
+    .delete
+        align-self: flex-end
+
+//-----------------------------------------
+// The container that holds the change-settings and the posts of the logged in user
+.accountContainer
+    display: flex
+// The container for the entire settings page
+.settingsMain
+    grid-template-columns: 15fr 70fr 15fr
+
+// -----------------------------
+
+    // Signup - containern
+.signupContainer
+    display: flex
+    justify-content: center
+    align-content: center
+    margin-top: 4em
+    .text-center
+        justify-self: center
+        font-size: 35px
+    input
+        padding: 1em 2em
+        font-size: 16px
+        margin: 0.5em
+
+    // Felmedelanden:
+.alert
+    padding: 1em 2em
+    font-size: 16px
+    margin: 0.5em
+    background-color: #ffae42
+    border-radius: 1em
+    border: 2px solid black
+
+    // Signup - knappen
+.signupBtn
+    padding: 1rem
+    background-color: blue
+    color: white
+    border-radius: 0.5rem
+    border: 1px solid black
+    float: right
+    font-size: 18px
+
+    // -----------------------------------------------
+    // Responsivitet:
+    
+@media (max-width: 800px) 
+    .Bnavbar
+        flex-direction: row
+        justify-content: space-around
+        
+
+@media (max-width: 600px) 
+    .BloginInputField
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem
+    .Bnavbar
+        flex-direction: column
+        align-content: center
+        text-align: center
+        button
+            margin-top: 1em
+    .loginReg
+        form
+            display: flex
+            flex-direction: column
+        
+
+
+        
+    

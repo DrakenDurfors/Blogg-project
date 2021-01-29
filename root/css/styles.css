@@ -1,0 +1,342 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+hr {
+  margin: 0;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+.Bnavbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Bnavbar .Bnavlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Bnavbar .Bnavlist .BnavListItem {
+  list-style-type: none;
+  margin: 0.2rem;
+  padding: 0;
+  display: inline;
+}
+
+.Bnavbar .Bnavlist .BnavListItem a {
+  border: 1px solid gray;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: lightgray;
+}
+
+.Bnavbar button {
+  background-color: white;
+  border: none;
+}
+
+.loginReg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.BloginBtn {
+  border: 1px solid gray;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: lightgray;
+}
+
+.BloginInputField {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.regButt {
+  border: 1px solid gray;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: lightgray;
+  font-size: 14px;
+}
+
+.main {
+  margin: 0;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20fr 60fr 20fr;
+      grid-template-columns: 20fr 60fr 20fr;
+}
+
+.margin {
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+}
+
+.BigPostConteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f0efef;
+  padding-bottom: 1.5rem;
+}
+
+.categories input[type=radio]:hover {
+  cursor: pointer;
+}
+
+.categories label:hover {
+  cursor: pointer;
+}
+
+.searchGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchbar {
+  padding: 6px 10px;
+}
+
+.articleDisplayDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.articleCard {
+  width: 18rem;
+  margin: 1rem;
+}
+
+.articleBtn {
+  padding: 0.5rem;
+  background-color: blue;
+  color: white;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+.buttonGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.buttonGroup .articleChangeBtn {
+  width: 3rem;
+}
+
+.articleChangeBtn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  margin: 0.5rem;
+  margin-left: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.edit {
+  background-color: blue;
+}
+
+.delete {
+  background-color: red;
+}
+
+.makeArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.create {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  margin: 0.5rem;
+  color: white;
+  font-size: 18px;
+  background-color: blue;
+}
+
+.deleteContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 5rem;
+}
+
+.deleteContainer .delete {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.accountContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.settingsMain {
+  -ms-grid-columns: 15fr 70fr 15fr;
+      grid-template-columns: 15fr 70fr 15fr;
+}
+
+.signupContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 4em;
+}
+
+.signupContainer .text-center {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 35px;
+}
+
+.signupContainer input {
+  padding: 1em 2em;
+  font-size: 16px;
+  margin: 0.5em;
+}
+
+.alert {
+  padding: 1em 2em;
+  font-size: 16px;
+  margin: 0.5em;
+  background-color: #ffae42;
+  border-radius: 1em;
+  border: 2px solid black;
+}
+
+.signupBtn {
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  float: right;
+  font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  .Bnavbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 600px) {
+  .BloginInputField {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  .Bnavbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+  .Bnavbar button {
+    margin-top: 1em;
+  }
+  .loginReg form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
